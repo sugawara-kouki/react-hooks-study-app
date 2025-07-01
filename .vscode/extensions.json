@@ -1,8 +1,9 @@
 {
   "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
     "bradlc.vscode-tailwindcss",
     "ms-vscode.vscode-typescript-next",
-    "esbenp.prettier-vscode",
     "ms-vscode.vscode-json",
     "formulahendry.auto-rename-tag",
     "christian-kohler.path-intellisense",

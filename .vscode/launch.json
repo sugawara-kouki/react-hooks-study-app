@@ -37,9 +37,7 @@
       },
       "console": "integratedTerminal",
       "sourceMaps": true,
-      "outFiles": [
-        "${workspaceFolder}/build/**/*.js"
-      ]
+      "outFiles": ["${workspaceFolder}/build/**/*.js"]
     }
   ]
 }
