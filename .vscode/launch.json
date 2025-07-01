@@ -1,0 +1,45 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Chrome: Debug React App",
+      "type": "chrome",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/app",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///./app/*": "${workspaceFolder}/app/*"
+      },
+      "preLaunchTask": "dev"
+    },
+    {
+      "name": "Edge: Debug React App",
+      "type": "msedge",
+      "request": "launch",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/app",
+      "sourceMaps": true,
+      "sourceMapPathOverrides": {
+        "webpack:///./app/*": "${workspaceFolder}/app/*"
+      },
+      "preLaunchTask": "dev"
+    },
+    {
+      "name": "Node.js: Debug Server",
+      "type": "node",
+      "request": "launch",
+      "program": "${workspaceFolder}/node_modules/.bin/react-router",
+      "args": ["dev"],
+      "cwd": "${workspaceFolder}",
+      "env": {
+        "NODE_ENV": "development"
+      },
+      "console": "integratedTerminal",
+      "sourceMaps": true,
+      "outFiles": [
+        "${workspaceFolder}/build/**/*.js"
+      ]
+    }
+  ]
+}
